@@ -1,5 +1,5 @@
 //Date Handling - 1
-
+console.log("program 1");
 function is_date(date){
 return date instanceof Date;
 }
@@ -16,6 +16,8 @@ console.log(is_date([1, 2, 4, 0]));
 
 
 //2
+console.log("program 2");
+
 function getCurrentDate(sep) 
 {
     const currentDate = new Date();
@@ -33,6 +35,8 @@ console.log(getCurrentDate('/'));
 
 
 //3
+console.log("program 3");
+
 function getDaysInMonth(month, year) {
     return new Date(year, month,0).getDate();
   }
@@ -46,6 +50,8 @@ console.log(getDaysInMonth(12, 2012));
 
 
 //4
+console.log("program 4");
+
 function month_name(date) {
     const monthNames = [
       "January", "February", "March", "April", "May", "June",
@@ -62,6 +68,8 @@ function month_name(date) {
 
 
 //5
+console.log("program 5");
+
 function compareDates(date1, date2) {
     if (date1 < date2) {
       console.log("date1 < date2")
@@ -80,6 +88,8 @@ function compareDates(date1, date2) {
 
 
 //6
+console.log("program 6");
+
 function add_minutes(date, minutes) {
     const millisecondsToAdd = minutes * 60 * 1000;
     const timestamp = date.getTime();
@@ -93,6 +103,8 @@ function add_minutes(date, minutes) {
 
 
 //7
+console.log("program 7");
+
 function is_weekend(date) {
     const dayOfWeek = date.getDay();
     if (dayOfWeek === 0 || dayOfWeek === 6) {
@@ -114,6 +126,8 @@ is_weekend(new Date('Nov 17, 2014'));
 
 
 //8
+console.log("program 8");
+
 function date_diff_indays(date1, date2) {
     const difference =  date2.getTime()-date1.getTime();
     const daysDifference = Math.ceil(difference / (1000 * 60 * 60 * 24));
@@ -128,6 +142,8 @@ function date_diff_indays(date1, date2) {
 
 
 //9
+console.log("program 9");
+
 function lastday(year,month) {
     const lastDayOfMonth = new Date(year, month + 1, 0).getDate();
     return lastDayOfMonth;
@@ -140,6 +156,8 @@ function lastday(year,month) {
 
 
 //10
+console.log("program 10");
+
 function yesterday(datee) {
     let ye=new Date(datee);
     datee.getDate()-1;
@@ -156,6 +174,8 @@ function yesterday(datee) {
 
 
 //11
+console.log("program 11");
+
 function getMaxDate(dates) {
     const maximumDate = dates.reduce(function(a, b) {
       return a > b ? a : b;
@@ -171,6 +191,8 @@ function getMaxDate(dates) {
 
 
 //12
+console.log("program 12");
+
 function getMinDate(dates) {
     const minDate = dates.reduce(function(a, b) {
       return a < b ? a : b;
